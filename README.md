@@ -3,7 +3,8 @@ Spatial Probit Imputation functions belonging to Roeling & Nicholls, Imputation 
 
 this function is an adaption from sar_combined_mcmc from the spatialprobit package: https://github.com/cran/spatialprobit
 
-##### CUT MODEL #####
+##### CUT MODEL ##### = sar_imp_cut
+##### Full Bayes MODEL ##### = sar_imp_fbs
 
 - it takes the same objects but performs imputation as explained in Roeling & Nicholls (2020), Social Networks (62)
 - the main difference is that most objects are lists so that multiple Ys with missing data can be used, but I guess this requires some more tweaking, with a proper use case this is easily implemented.
