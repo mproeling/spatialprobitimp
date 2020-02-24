@@ -7,7 +7,7 @@ this function is an adaption from sar_combined_mcmc from the spatialprobit packa
 ##### Full Bayes MODEL = sar_imp_fbs
 
 - it takes the same objects but performs imputation as explained in Roeling & Nicholls (2020), Social Networks (62)
-- the main difference is that most objects are lists so that multiple Ys with missing data can be used, but I guess this requires some more tweaking, with a proper use case this is easily implemented.
+- the main difference is that most objects are lists so that multiple Ys with missing data can be used, but this is untested and requires some more tweaking, the code is however ready for implementation of a multivariate use case. Note that there are complexities with full bayes feedback mechanisms in the context of compatability (not to do with computation but statistical compatibility) in multivariate missing data, see Van Buuren: flexible imputation. So my advice is, if you want to test a multivariate Y, restrict the analyses to the cut model only. 
 - the traces of rho are written to a file
 - the first column of X is filled with 1 (for the intercept)
 - the imputation output is in $results$y_imp
